@@ -21,7 +21,7 @@ class LoginController
     public function index(RequestInterface $request, ResponseInterface $response)
     {
         $error = $this->flash->getMessages();
-        $this->template->render('login.tpl', [
+        $this->template->render('login', [
             'error' => $error['error'][0] ?? null,
         ]);
 

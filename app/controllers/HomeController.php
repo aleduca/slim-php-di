@@ -20,7 +20,7 @@ class HomeController
     {
         $users = $this->container->get(User::class)->users();
 
-        $this->template->render('home.tpl', ['users' => $users]);
+        $this->template->render('home', ['users' => $users]);
 
         return $response;
     }
