@@ -16,11 +16,11 @@ class PostController
 
   public function index($request, $response)
   {
-    $users = new Paginator($this->post, 5);
+    $posts = new Paginator($this->post, 5);
 
     $this->template->render('posts', [
-      'posts' => $users->items(),
-      'links' => $users->links(),
+      'posts' => $posts->items(),
+      'links' => $posts->links(),
     ]);
 
     return $response;

@@ -18,25 +18,23 @@ abstract class Model
     int $offset = 0
   ) {
     $sql = "select * from {$this->table} LIMIT {$limit} OFFSET {$offset}";
-    $stmt = $this->connection->prepare($sql);
-    $results = $stmt->executeQuery();
-    return $results->fetchAllAssociative();
+    return $this->executeQuery($sql)->fetchAllAssociative();
   }
 
-  private function executeQuery()
+  protected function executeQuery(string $sql)
   {
-    $sql = "select * from {$this->table}";
-    $stmt = $this->connection->prepare($sql);
-    return $stmt->executeQuery();
+    return $this->connection->prepare($sql)->executeQuery();
   }
 
   public function count()
   {
-    return $this->executeQuery()->rowCount();
+    $sql = "select * from {$this->table}";
+    return $this->executeQuery($sql)->rowCount();
   }
 
   public function fetch()
   {
-    return $this->executeQuery()->fetchAllAssociative();
+    $sql = "select * from {$this->table}";
+    return $this->executeQuery($sql)->fetchAllAssociative();
   }
 }
