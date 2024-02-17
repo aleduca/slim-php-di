@@ -1,7 +1,7 @@
 <?php $this->layout('layout', ['title' => 'Lista de Users']); ?>
 <ul class="list-group">
-  <?php foreach ($users as $user) : ?>
-    <li class="list-group-item"><?php echo $user['firstName'] ?></li>
+  <?php foreach ($posts as $post) : ?>
+    <li class="list-group-item"><?php echo $post['title'] ?></li>
   <?php endforeach ?>
 </ul>
 

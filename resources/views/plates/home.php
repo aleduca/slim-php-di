@@ -3,5 +3,5 @@
 <h2>Home</h2>
 
 <p>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt vero modi quibusdam nobis porro saepe, commodi labore illo. Labore ipsum iste quas amet esse sequi officia perferendis quo natus praesentium!
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nam dolore, odit laboriosam, ullam voluptatem saepe temporibus ab inventore placeat repellat voluptate ex porro aliquam sed. Harum repellat delectus maxime!
 </p>
